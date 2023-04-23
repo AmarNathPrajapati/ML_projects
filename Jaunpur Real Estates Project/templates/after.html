@@ -1,0 +1,67 @@
+{%extends "template.html" %}
+
+{%block body%}
+        <!-- Page Header-->
+        <header class="masthead" style="background-image: url('../static/images/img4.jpg')">
+            <div class="container position-relative px-4 px-lg-5">
+                <div class="row gx-4 gx-lg-5 justify-content-center">
+                    <div class="col-md-10 col-lg-8 col-xl-7">
+                        <div class="site-heading">
+                            <h1>Prediction</h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- Main Content-->
+        <div class="container p-5">
+
+        {%if ((data > 10) and (data<=15)) %}
+        <img width="400" class="d-block mx-auto m-3" src="../static//images//img3.jpg" alt="">
+
+        {%elif ((data > 15) and (data<=20)) %}
+        <img width="400" class="d-block mx-auto m-3" src="../static//images//img1.jpeg" alt="">
+
+        {%elif ((data > 20) and (data<=25)) %}
+        <img width="400" class="d-block mx-auto m-3" src="../static//images//img2.jpeg" alt="">
+
+        {%elif ((data > 25) and (data<=30)) %}
+        <img width="400" class="d-block mx-auto m-3" src="../static//images//img4.jpg" alt="">
+
+        {%elif ((data > 30) and (data<=35)) %}
+        <img width="400" class="d-block mx-auto m-3" src="../static//images//img5.jpg" alt="">
+
+        {%elif ((data > 35) and (data<=40)) %}
+        <img width="400" class="d-block mx-auto m-3" src="../static//images//img6.jpg" alt="">
+
+        {%elif ((data > 40) and (data<=45)) %}
+        <img width="400" class="d-block mx-auto m-3" src="../static//images//img9.jpeg" alt="">
+
+        {%elif ((data > 45) and (data<=50)) %}
+        <img width="400" class="d-block mx-auto m-3" src="../static//images//img10.jpeg" alt="">
+
+        {%elif ((data > 50) and (data<=70)) %}
+        <img width="400" class="d-block mx-auto m-3" src="../static//images//img11.jpg" alt="">
+
+        {%elif ((data > 70) and (data<=100)) %}
+        <img width="400" class="d-block mx-auto m-3" src="../static//images//img7.jpg" alt="">
+
+        {%elif (data > 100) %}
+        <img width="400" class="d-block mx-auto m-3" src="../static//images//img8.jpg" alt="">
+
+        {%endif%}
+
+        <H1 class="text-center my-5">
+            Predicted House Price {{data}} Lacs Rupees
+        </H1>
+
+        <button class="btn btn-primary d-block mx-auto ">
+            <a class="text-white" href="/dashboard">Go Back to Dashboard</a>
+        </button>
+        </div>
+
+{%endblock%}        
+
+
+
+

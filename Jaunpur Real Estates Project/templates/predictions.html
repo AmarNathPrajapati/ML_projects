@@ -1,0 +1,111 @@
+{%extends "template.html" %}
+
+{%block body%}
+        <!-- Page Header-->
+        <header class="masthead" style="background-image: url('../static/assets/img/home-bg.jpg')">
+            <div class="container position-relative px-4 px-lg-5">
+                <div class="row gx-4 gx-lg-5 justify-content-center">
+                    <div class="col-md-10 col-lg-8 col-xl-7">
+                        <div class="site-heading">
+                            <h1>{{params['blog_head']}}</h1>
+                            <span class="subheading">{{params["blog_subhead"]}}</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- Main Content-->
+
+
+
+        <div class="container-fluid px-4 px-lg-5">
+            <div class="container-fluid py-5">
+                <a href="/">
+                    <button class="d-block float-start btn btn-primary mb-5" >Home</button>
+                </a>
+                <a href="/logout">
+                    <button class="d-block btn btn-primary mb-5 float-end" >Logout</button>
+                </a>
+            </div>
+            <div class="row justify-content-center my-5">
+                <div class="col-12">
+                    <h1 class="text-center mb-5">Predictions Details</h1>
+                    <table class="table">
+                        <thead>
+                          <tr>
+                            								
+                            <th class="text-center" scope="col">CRIM</th>
+                            <th class="text-center" scope="col">ZN</th>
+                            <th class="text-center" scope="col">INDUS</th>
+                            <th class="text-center" scope="col">CHAS</th>
+                            <th class="text-center" scope="col">NOX</th>
+                            <th class="text-center" scope="col">RM</th>
+                            <th class="text-center" scope="col">AGE</th>
+                            <th class="text-center" scope="col">DIS</th>
+                            <th class="text-center" scope="col">RAD</th>
+                            <th class="text-center" scope="col">TAX</th>
+                            <th class="text-center" scope="col">PTRATIO</th>
+                            <th class="text-center" scope="col">B</th>
+                            <th class="text-center" scope="col">LSTAT</th>
+                            <th class="text-center" scope="col">MEDV(Predicted)</th>
+                            
+                          </tr>
+                        </thead>
+                        <tbody>
+                        {% for prediction in predictions %}
+                          <tr>
+                            <td class="text-center">
+                                {{prediction.crim}}
+                            </td>
+                            <td class="text-center">
+                                {{prediction.zn}}
+                            </td>
+                            <td class="text-center">
+                                {{prediction.indus}}
+                            </td>
+                            <td class="text-center">
+                                {{prediction.chas}}
+                            </td>
+                            <td class="text-center">
+                                {{prediction.nox}}
+                            </td>
+                            <td class="text-center">
+                                {{prediction.rm}}
+                            </td>
+                            <td class="text-center">
+                                {{prediction.age}}
+                            </td>
+                            <td class="text-center">
+                                {{prediction.dis}}
+                            </td>
+                            <td class="text-center">
+                                {{prediction.rad}}
+                            </td>
+                            <td class="text-center">
+                                {{prediction.tax}}
+                            </td>
+                            <td class="text-center">
+                                {{prediction.ptratio}}
+                            </td>
+                            <td class="text-center">
+                                {{prediction.b}}
+                            </td>
+                            <td class="text-center">
+                                {{prediction.lstat}}
+                            </td>
+                            <td class="text-center">
+                                {{prediction.medv}}
+                            </td>
+                            
+                          </tr>
+                        {%endfor%}
+                        </tbody>
+                      </table>
+                    <!-- Pager-->
+                    <!-- <div class="d-block float-start"><a class="btn btn-primary text-uppercase" href="{{prev}}">&larr; Previous</a></div>
+                    <div class="d-block float-end"><a class="btn btn-primary text-uppercase" href="{{next}}">Next &rarr;</a></div> -->
+                </div>
+            </div>
+        </div>
+
+{%endblock%}        

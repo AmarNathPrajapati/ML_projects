@@ -1,0 +1,304 @@
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,600;1,300&display=swap");
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  max-width: 1800px;
+  margin: auto !important;
+}
+
+.banner {
+  padding: 40px 30px !important;
+  background-color: #252B42 !important;
+}
+.services_banner{
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../images/download.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 50vh;
+  padding: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-self: center;
+}
+.services_heading{
+  
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 57px;
+  text-align: center;
+  letter-spacing: 0.2px;
+  color: white;
+}
+.banner .headline {
+  
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 30px;
+  /* identical to box height */
+
+  text-align: start;
+
+  color: #fec536;
+}
+.banner_title {
+  
+  font-style: normal;
+  font-weight: 500;
+  font-size: 50px;
+  line-height: 50px;
+
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.banner_desc {
+  
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  margin-top: 20px;
+  /* line-height: 50px; */
+
+  color: rgba(255, 255, 255, 0.9);
+}
+.card_heading {
+  display: flex;
+  justify-content: space-between;
+}
+
+.speciality .heading {
+  /* border-left: 5px solid #2bb79d; */
+  padding: 10px;
+  
+  font-style: normal;
+  font-weight: 700;
+  font-size: 27px;
+  line-height: 29px;
+  text-transform: uppercase;
+
+  color: #2bb79d;
+
+  display: flex;
+  justify-content: space-between;
+}
+.speciality .heading4 {
+  /* border-left: 5px solid #2bb79d; */
+  padding: 10px;
+  
+  font-style: normal;
+  font-weight: 700;
+  font-size: 27px;
+  line-height: 29px;
+  text-transform: uppercase;
+
+  color: #b72bb0;
+
+  display: flex;
+  justify-content: space-between;
+}
+
+.speciality .heading2 {
+  /* border-left: 5px solid #0132e0; */
+  padding: 10px;
+  
+  font-style: normal;
+  font-weight: 700;
+  font-size: 27px;
+  line-height: 29px;
+  text-transform: uppercase;
+
+  color: #0132e0;
+
+  display: flex;
+  justify-content: space-between;
+}
+
+.speciality .heading3 {
+  /* border-left: 5px solid #ff0000; */
+  padding: 10px;
+  
+  font-style: normal;
+  font-weight: 700;
+  font-size: 27px;
+  line-height: 29px;
+  text-transform: uppercase;
+
+  color: #ff0000;
+
+  display: flex;
+  justify-content: space-between;
+}
+
+.speciality .content {
+  margin-top: 30px;
+  /* border-left: 2px solid #000000; */
+  padding: 10px;
+  
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 29px;
+  display: flex !important;
+  justify-content: space-between;
+  flex-direction: row;
+}
+.content1 {
+  
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 29px;
+}
+
+.black_line {
+  width: 1px !important;
+  height: 90px;
+  background-color: black;
+}
+.desc {
+  width: 98% !important;
+}
+
+.company_container {
+  padding: 10px;
+}
+
+.company_heading {
+  
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 57px;
+  /* identical to box height, or 142% */
+
+  text-align: center;
+  letter-spacing: 0.2px;
+}
+.company_container .card-header {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../images/company/img1.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 90%;
+  margin: auto;
+  height: 320px;
+  padding: 10px;
+}
+.card-header-title {
+  display: flex;
+  align-items: center;
+  align-self: center;
+  height: 90%;
+}
+.company_container .card-header .company_name {
+  
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 29px;
+
+  color: #f2f3f5;
+}
+.visit_site {
+  text-decoration: none;
+  
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 15px;
+  text-transform: uppercase;
+
+  color: #f2f3f5;
+}
+.visit_site:hover {
+  color: #f2f3f5;
+  cursor: pointer;
+}
+.long_desc {
+  
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  height: 220px;
+  color: #0f0f0f;
+}
+.about_para1{
+  width: 200px;
+  color: black;
+}
+.about_card{
+  width: 200px;
+  /* height: 200px; */
+}
+.about_text{
+  text-align: justify;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+@media (min-width:380px) and (max-width:575px) {
+  .about_text{
+    margin-left:45px ;
+  }
+}
+@media (min-width:320px) and (max-width:379px) {
+  .about_text{
+    margin-left:30px ;
+  }
+}
+@media (min-width:768px) and (max-width:850px) {
+  .long_desc{
+    height: 400px;
+  }
+}
+@media (min-width:851px) and (max-width:910px) {
+  .long_desc{
+    height: 350px;
+  }
+}
+@media (min-width:911px) and (max-width:1020px) {
+  .long_desc{
+    height: 300px;
+  }
+}
+
+@media (min-width: 100px) and (max-width: 400px) {
+  .banner {
+    padding: 40px 10px !important;
+    background: rgba(0, 149, 218, 0.87);
+  }
+
+  .banner .headline {
+    
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 30px;
+    /* identical to box height */
+
+    text-align: start;
+
+    color: #fec536;
+  }
+  .banner_title {
+    
+    font-style: normal;
+    font-weight: 500;
+    font-size: 35px;
+    line-height: 50px;
+
+    color: rgba(255, 255, 255, 0.9);
+  }
+}

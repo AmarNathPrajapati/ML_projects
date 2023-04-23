@@ -1,0 +1,303 @@
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,600;1,300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,600;1,300&display=swap");
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+body {
+  max-width: 1800px;
+  margin: auto !important;
+  background-color: #f2f2f2 !important;
+  /* background-color: #252B42 !important; */
+  /* color: black !important; */
+}
+/* section 1 Banner */
+.home_slide {
+  height: 90vh;
+}
+.about_col {
+  margin-top: 12% !important;
+}
+.img_div {
+  background: url("../images/bgg1.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100vw 100vh;
+  width: 100%;
+  height: fit-content;
+  padding: 10px;
+  margin-bottom: 50px;
+  animation: amar 20s linear 0.2s infinite forwards;
+}
+.img_div2 {
+  /* background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../images/bgg2.jpg'); */
+  background: url("../images/bgg2.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100vw 100vh;
+  width: 100%;
+  height: fit-content;
+  padding: 10px;
+  margin-bottom: 50px;
+  animation: amar 20s linear 0.2s infinite forwards;
+}
+.img_div3 {
+  background: url("../images/bgg3.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100vw 100vh;
+  width: 100%;
+  height: fit-content;
+  padding: 10px;
+  margin-bottom: 50px;
+  animation: amar 20s linear 0.2s infinite forwards;
+}
+.img_div4 {
+  background: url("../images/bgg4.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100vw 100vh;
+  width: 100%;
+  height: fit-content;
+  padding: 10px;
+  margin-bottom: 50px;
+  animation: amar 20s linear 0.2s infinite forwards;
+}
+@keyframes amar {
+  from {
+    background-size: 100% 100%;
+  }
+  to {
+    background-size: 200% 200%;
+  }
+}
+
+.company_name {
+  /* font-family: "Poppins"; */
+  font-weight: 1000;
+  font-size: 50px;
+  text-align: center;
+  letter-spacing: 0.2px;
+  /* light-text-color */
+  color: #ffffff;
+}
+.about_company {
+  /* font-family: "Poppins"; */
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 30px;
+  /* or 150% */
+  text-align: center;
+  letter-spacing: 0.2px;
+  color: #ffffff;
+}
+.display_btns {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+.contact_us_btn {
+  background-color: #ffa62b;
+  padding: 8px 30px;
+  border-radius: 37px;
+  border: none;
+  color: white;
+  font-weight: 700;
+  font-size: 19px;
+  text-decoration: none;
+}
+.contact_us_btn:hover {
+  color: white;
+}
+.learn_more_btn {
+  background: transparent;
+  padding: 8px 30px;
+  border-radius: 37px;
+  border: 1px solid white;
+  color: white;
+  font-weight: 700;
+  font-size: 19px;
+  text-decoration: none;
+}
+.learn_more_btn:hover {
+  color: white;
+}
+
+.carousel-inner .active {
+  border: none;
+}
+
+/* section 2 Why choose us */
+
+.div2 {
+  background-color: white;
+  border-radius: 30px 30px 0px 0px;
+  padding: 20px 20px 60px;
+}
+.div2_heading {
+  /* h2 */
+
+  /* font-family: "Poppins"; */
+  /* font-style: normal; */
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 57px;
+  /* identical to box height, or 142% */
+
+  text-align: center;
+  letter-spacing: 0.2px;
+}
+.card0 {
+  max-width: 100%;
+  padding: 20px 20px 40px;
+  border: 1.4px solid #e0e3eb;
+  margin: auto;
+  transition: all 0.5s ease-in-out;
+  border-radius: 1rem;
+}
+
+.card0:hover {
+  box-shadow: 1px 1px 5px rgb(102, 100, 100);
+  transform: scale(1.05);
+  background-color: #0b57e3;
+  color: white;
+}
+.card0:hover .card0_img {
+  filter: invert(1);
+}
+.service_name {
+  /* font-family: "Work Sans"; */
+  /* font-style: normal; */
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 23px;
+  text-align: center;
+}
+.choose_text {
+  /* font-family: "Poppins"; */
+  font-size: 14px;
+  line-height: 22px;
+}
+
+/* section 3 Services */
+.div3 {
+  padding: 10px;
+}
+
+.div3 a {
+  text-decoration: none;
+}
+
+.div3 .card {
+  transition: all 0.5s ease-in-out;
+  border-radius: 0.5rem;
+}
+
+.div3 .card:hover {
+  transform: scale(1.05);
+}
+
+.div3 {
+  padding: 50px;
+}
+.div3_heading {
+  /* font-family: "Poppins"; */
+  /* font-style: normal; */
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 57px;
+  /* identical to box height, or 142% */
+
+  text-align: center;
+  letter-spacing: 0.2px;
+  color: white;
+}
+.services_row2 {
+  margin-top: 100px !important;
+}
+
+.grey_line {
+  width: 60px;
+  margin: auto;
+  margin-top: 18px;
+  height: 2px;
+
+  /* Neutral/100 */
+  background: #e0e3eb;
+}
+
+.card_type2 {
+  padding: 30px;
+  max-width: 300px;
+  margin: auto;
+  height: 100%;
+  background-color: #0b57e3 !important;
+}
+.img_type2 {
+  filter: invert(1);
+}
+.service_name2 {
+  /* font-family: "Work Sans"; */
+  /* font-style: normal; */
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 23px;
+  text-align: center;
+  color: white;
+}
+
+/* section 4 approach */
+.app_btn1 {
+  /* font-family: "Poppins"; */
+  background-color: #0b57e3;
+  color: white;
+}
+
+.number {
+  /* font-family: "Poppins"; */
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 171.5%;
+  color: #0b57e3;
+}
+
+.approach_col .card-title {
+  /* font-family: "Poppins"; */
+  font-style: normal;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 171.5%;
+}
+
+.approach_col .card-text {
+  /* font-family: "Poppins"; */
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 171.5%;
+}
+/* section 5 privacy image */
+.security_img {
+  object-fit: cover;
+  width: 100%;
+}
+
+@media (min-width: 100px) and (max-width: 400px) {
+  .company_name {
+    /* h1 */
+    /* font-family: "Poppins"; */
+    /* font-style: normal; */
+    font-weight: 1000;
+    font-size: 40px;
+    text-align: center;
+    letter-spacing: 0.2px;
+
+    /* light-text-color */
+
+    color: #ffffff;
+  }
+}
